@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="dz.youcefmegoura.ebatata.ebatata.views.ConsulterTransactionActivity">
+
+    <ImageView
+        android:id="@+id/background_consulter_client"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:src="@drawable/background_consulter_client" />
+
+    <LinearLayout
+        android:id="@+id/background_consulter_transaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nom_consulter_transaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Nom du Client"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/box_consulter_transaction"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_button_white"
+            android:drawableLeft="@drawable/ic_pages_blue"
+            android:gravity="center"
+            android:paddingLeft="30dip"
+            android:paddingRight="26dip"
+            android:singleLine="true"
+            android:text="00"
+            android:textAlignment="center"
+            android:textColor="@drawable/color_text_button_blue"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ajouter_consulter_trasaction"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/background_consulter_transaction"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ic_button_blue"
+        android:drawableLeft="@drawable/ic_library_add_black"
+        android:fontFamily="@font/montserrat_bold"
+        android:onClick="ajouterTransaction"
+        android:paddingLeft="30dip"
+        android:paddingRight="26dip"
+        android:text="Ajouter"
+        android:textColor="@drawable/color_text_button_white" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_texts_consulter_transaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ajouter_consulter_trasaction"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ajouter_consulter_trasaction"
+            android:text="Date\t\t\t"
+            android:textSize="9sp"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/montserrat_light"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ajouter_consulter_trasaction"
+            android:text="Combien il a pris\t\t\t"
+            android:textSize="9sp"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/montserrat_light"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9sp"
+            android:layout_below="@id/ajouter_consulter_trasaction"
+            android:text="Combien il a donné"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/montserrat_light"/>
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_consulter_trasaction"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linearLayout_texts_consulter_transaction">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

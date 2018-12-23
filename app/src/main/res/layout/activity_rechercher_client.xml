@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="dz.youcefmegoura.ebatata.ebatata.views.RechercherClientActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout_rechercher_client"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/rectangle_bleu"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:onClick="backButton"
+            android:src="@drawable/flech_back" />
+
+        <EditText
+            android:id="@+id/search_rechercher_client"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:hint="Rechercher ..."
+            android:textColor="@android:color/white"
+            android:theme="@style/TextAppearance.AppCompat" />
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/list_rechercher_client_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout_rechercher_client"
+        android:layout_margin="10dp"
+        android:scrollbars="vertical" />
+
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dz.youcefmegoura.ebatata.ebatata">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_e_batata"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_e_batata_rounded"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".views.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".views.MainActivity"/>
+        <activity android:name=".views.AjouterClientActivity" />
+        <activity android:name=".views.RechercherClientActivity" />
+        <activity android:name=".views.ConsulterClientActivity" />
+        <activity android:name=".views.ModifierClientActivity" />
+        <activity android:name=".views.ConsulterTransactionActivity" />
+        <activity android:name=".views.AjouterTransactionActivity" />
+        <activity android:name=".views.ModifierTransactionActivity" />
+
+    </application>
+
+</manifest>
