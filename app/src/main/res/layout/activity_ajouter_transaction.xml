@@ -32,6 +32,7 @@
             android:layout_height="50dp"
             android:layout_marginRight="20dp"
             android:focusable="true"
+            android:fontFamily="@font/montserrat_bold"
             android:hint="0 Box"
             android:inputType="numberSigned" />
 
@@ -39,7 +40,6 @@
 
     <RelativeLayout
         android:id="@+id/apris_rl_ajouter_transaction"
-
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@+id/adonne_rl_ajouter_transaction"
@@ -54,6 +54,7 @@
             android:layout_width="80dp"
             android:layout_height="50dp"
             android:layout_marginRight="20dp"
+            android:fontFamily="@font/montserrat_bold"
             android:hint="0 Box"
             android:inputType="numberSigned" />
 

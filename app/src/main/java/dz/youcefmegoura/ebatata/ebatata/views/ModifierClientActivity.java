@@ -24,6 +24,7 @@ public class ModifierClientActivity extends AppCompatActivity {
     //Variables membre
     private SqliteManager sqliteManager;
     private int idFromBundle;
+    private String ancienNom;
 
 
     @Override
@@ -39,6 +40,7 @@ public class ModifierClientActivity extends AppCompatActivity {
         sqliteManager = new SqliteManager(this);
 
         Client client = sqliteManager.show_client(idFromBundle);
+        ancienNom = client.getNom();
         nom_modifier_client.setText(client.getNom());
         num1_modifier_client.setText(client.getNum1());
         num2_modifier_client.setText(client.getNum2());
@@ -61,11 +63,14 @@ public class ModifierClientActivity extends AppCompatActivity {
             nom_modifier_client.requestFocus();
             return;
         }
-        if (!sqliteManager.isClientExist(nom)) {
-            nom_modifier_client.setError("Le nom existe déja");
-            nom_modifier_client.requestFocus();
-            return;
+        if (!nom.equals(ancienNom)){
+            if (!sqliteManager.isClientExist(nom)) {
+                nom_modifier_client.setError("Le nom existe déja");
+                nom_modifier_client.requestFocus();
+                return;
+            }
         }
+
 
         Client client = new Client(idFromBundle, nom, numero1, numero2);
         sqliteManager.modifier_client_db(client);

@@ -20,13 +20,13 @@
         <ImageView
             android:id="@+id/bg_image_splash_screen"
             android:layout_width="match_parent"
-            android:layout_height="480px"
+            android:layout_height="300dp"
             android:layout_marginTop="150dp"
             android:background="@drawable/splash_background" />
 
         <ImageView
-            android:layout_width="231dp"
-            android:layout_height="94dp"
+            android:layout_width="231px"
+            android:layout_height="94px"
             android:layout_below="@+id/bg_image_splash_screen"
             android:layout_centerHorizontal="true"
             android:background="@drawable/e_batata_text" />

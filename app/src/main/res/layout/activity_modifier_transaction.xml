@@ -30,7 +30,7 @@
             android:layout_width="80dp"
             android:layout_height="50dp"
             android:layout_marginRight="30dp"
-
+            android:fontFamily="@font/montserrat_bold"
             android:inputType="numberSigned" />
 
     </RelativeLayout>
@@ -52,6 +52,7 @@
             android:layout_width="80dp"
             android:layout_height="50dp"
             android:layout_marginRight="30dp"
+            android:fontFamily="@font/montserrat_bold"
             android:inputType="numberSigned" />
 
     </RelativeLayout>

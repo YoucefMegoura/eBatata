@@ -36,6 +36,7 @@
             android:id="@+id/nom_ajouter_client"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
             android:hint="Nom"
             android:inputType="textPersonName" />
 
@@ -43,6 +44,7 @@
             android:id="@+id/num1_ajouter_client"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
             android:hint="Numero de telephone 1"
             android:inputType="phone" />
 
@@ -50,6 +52,7 @@
             android:id="@+id/num2_ajouter_client"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
             android:hint="Numero de telephone 2"
             android:inputType="phone" />
 

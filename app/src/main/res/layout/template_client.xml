@@ -26,6 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_toEndOf="@id/image_template_client"
+            android:fontFamily="@font/montserrat_regular"
             android:text="Line 1"
             android:textColor="@android:color/black"
             android:textSize="20sp"
@@ -36,6 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/nom_template_client"
+            android:fontFamily="@font/montserrat_light"
             android:layout_marginLeft="15dp"
             android:layout_toEndOf="@id/image_template_client"
             android:text="Line 2" />
